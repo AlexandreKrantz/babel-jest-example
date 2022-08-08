@@ -27,9 +27,7 @@ test('test basic +6', () => {
   expect((0, _main.caesarCipher)('bcdefg', 6)).toMatch('hijklm');
 });
 test('test spaces', () => {
-  expect(
-    (0, _main.caesarCipher)('hi the name is bum', 7)
-  ).toMatch('op aol uhtl pz ibt');
+  expect((0, _main.caesarCipher)('hi the name is bum', 7)).toMatch('op aol uhtl pz ibt');
 });
 test('test z wrap', () => {
   expect((0, _main.caesarCipher)('zebra', 3)).toMatch('cheud');

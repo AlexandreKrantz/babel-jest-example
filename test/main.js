@@ -38,9 +38,9 @@ const caesarCipher = (str, key) => {
       let newCharCode = charCode + key;
 
       if (newCharCode < 65) {
-        newCharCode = 91 + (newCharCode-65);
+        newCharCode = 91 + key;
       } else if (newCharCode > 90) {
-        newCharCode = 64 + (newCharCode - 90);
+        newCharCode = 64 + key;
       }
 
       result += String.fromCharCode(newCharCode);
@@ -49,9 +49,9 @@ const caesarCipher = (str, key) => {
       let newCharCode = charCode + key;
 
       if (newCharCode < 97) {
-        newCharCode = 123 + (newCharCode-97);
+        newCharCode = 123 + key;
       } else if (newCharCode > 122) {
-        newCharCode = 96 + (newCharCode - 122);
+        newCharCode = 96 + key;
       }
 
       result += String.fromCharCode(newCharCode);
